@@ -1,0 +1,11 @@
+applications:
+- path: javaCloudantWorkloadSchedulerApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: javaVRwebapp
+  host: javaVRwebapp
+  disk_quota: 1024M
+  services:
+  - javaVRwebapp-cloudantNoSQLDB
+  - javaVRwebapp-WorkloadScheduler
